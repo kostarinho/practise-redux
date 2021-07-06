@@ -1,0 +1,49 @@
+.container {
+ max-width: 1200px;
+}
+
+.gifs{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 1em;
+}
+
+
+.form{
+    padding: 30px 10px;
+}
+
+.input-search{
+ border: none;
+ border-radius: 5px;
+ height: 30px;
+ padding: 0 15px;
+}
+
+
+.btn{
+    
+    background-image: linear-gradient(to right top, #b626c4, #5a73f8, #009bff, #00b7ec, #38cad1);
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 13px 30px;
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+    margin: 0.3rem;
+
+
+    &:hover {
+        transition: background-color 0.3s ease-in;
+        background: #ec3169a2;
+        color: white;
+    }
+
+    &:focus {
+        outline: none;
+       
+    }
+} 
